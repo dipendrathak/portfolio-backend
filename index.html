@@ -1,0 +1,2932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dipendra Thakur — Geomatics Engineer | Researcher | Innovator</title>
+    <meta name="description"
+        content="Portfolio of Dipendra Thakur — Geomatics Engineer, GPS Crustal Deformation Researcher, Published Author in Geomatics World Magazine, and HackFast First Prize Winner.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1a1f36;
+            --secondary: #4f6df5;
+            --accent: #00d4aa;
+            --light: #f0f2f8;
+            --dark: #1a1f36;
+            --text: #2d3748;
+            --text-light: #718096;
+            --gradient-1: linear-gradient(135deg, #1a1f36 0%, #2d3a8c 50%, #4f6df5 100%);
+            --gradient-accent: linear-gradient(135deg, #00d4aa 0%, #4f6df5 100%);
+            --glass: rgba(255, 255, 255, 0.08);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
+            --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent);
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--gradient-1);
+            color: white;
+            padding: 150px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" opacity="0.1"><polygon fill="white" points="0,1000 1000,0 1000,1000"/></svg>');
+            background-size: cover;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .hero-text {
+            max-width: 700px;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            color: white;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin: 0 auto 30px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .hero-img-container {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+            z-index: 2;
+        }
+
+        .hero-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            animation: float 3s ease-in-out infinite, glow 2s ease-in-out infinite alternate;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(45deg, var(--accent), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+        }
+
+        .hero-img-container::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--accent), var(--secondary), var(--primary));
+            z-index: -1;
+            animation: rotate 10s linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+
+            to {
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-img {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: 400px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 5rem;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .skills-intro {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text);
+        }
+
+        .skill-category {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-10px);
+        }
+
+        .skill-category h3 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .skill-category h3 i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .skill-item {
+            margin-bottom: 15px;
+        }
+
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            height: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .skill-level {
+            height: 100%;
+            background-color: var(--accent);
+            border-radius: 5px;
+            width: 0;
+            transition: width 1.5s ease;
+        }
+
+        /* Experience Section */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: var(--secondary);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+            width: 50%;
+            padding: 20px 40px;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        .timeline-content:after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            transform: rotate(45deg);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content:after {
+            right: -10px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content:after {
+            left: -10px;
+        }
+
+        .timeline-date {
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-dot {
+            right: -10px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: -10px;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-img {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-info h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .project-tag {
+            background-color: var(--light);
+            color: var(--primary);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        /* Education Section */
+        .education-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .education-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .education-item h3 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        .education-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color: var(--text-light);
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-item i {
+            width: 50px;
+            height: 50px;
+            background-color: var(--light);
+            color: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: var(--secondary);
+            outline: none;
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Floating background elements */
+        .floating-bg {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: floatAround 15s infinite linear;
+            z-index: -1;
+        }
+
+        @keyframes floatAround {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            25% {
+                transform: translate(50px, 50px) rotate(90deg);
+            }
+
+            50% {
+                transform: translate(100px, 0) rotate(180deg);
+            }
+
+            75% {
+                transform: translate(50px, -50px) rotate(270deg);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+            }
+        }
+
+        /* Text animation */
+        .animated-text {
+            display: inline-block;
+            overflow: hidden;
+            border-right: 2px solid white;
+            white-space: nowrap;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: white
+            }
+        }
+
+        /* CV Download Button */
+        .download-cv {
+            background-color: var(--accent);
+            margin-left: 15px;
+        }
+
+        .download-cv:hover {
+            background-color: #16a085;
+        }
+
+        /* Project Icons */
+        .project-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--primary);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* CV Download Section */
+        .cv-download {
+            text-align: center;
+            padding: 40px 0;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-top: 40px;
+        }
+
+        .cv-download h3 {
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        /* NEW: Visual Symbols for Projects */
+        .project-symbol {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+        }
+
+        .drone-symbol {
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            animation: pulse 2s infinite;
+        }
+
+        .municipal-symbol {
+            background: linear-gradient(45deg, #e74c3c, #f39c12);
+            animation: rotate 5s infinite linear;
+        }
+
+        /* NEW: Teaching Statistics Section */
+        .teaching-stats {
+            background: white;
+            padding: 50px 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin: 40px 0;
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background: var(--light);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .stat-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        /* NEW: Animated Charts */
+        .charts-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .chart {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .chart-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .chart-bar {
+            height: 30px;
+            background: #e0e0e0;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .chart-fill {
+            height: 100%;
+            border-radius: 15px;
+            width: 0;
+            transition: width 2s ease;
+            position: relative;
+        }
+
+        .chart-label {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-weight: 600;
+            z-index: 2;
+        }
+
+        .chart-value {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* NEW: Student Growth Chart */
+        .growth-chart {
+            position: relative;
+            height: 300px;
+            margin-top: 20px;
+        }
+
+        .growth-line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: linear-gradient(to top, var(--secondary), var(--accent));
+            border-radius: 5px 5px 0 0;
+            transition: height 2s ease;
+        }
+
+        .growth-label {
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .growth-marker {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .growth-number {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Publications Section */
+        .publications {
+            background: linear-gradient(180deg, #f0f2f8 0%, #ffffff 100%);
+        }
+
+        .publication-card {
+            background: white;
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: var(--shadow-sm);
+            border-left: 5px solid var(--secondary);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .publication-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, transparent 50%, rgba(79, 109, 245, 0.05) 50%);
+            border-radius: 0 16px 0 0;
+        }
+
+        .publication-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-left-color: var(--accent);
+        }
+
+        .pub-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--gradient-accent);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 25px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+        }
+
+        .pub-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .pub-journal {
+            font-size: 1rem;
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pub-description {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+        .pub-topics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 18px;
+        }
+
+        .pub-topic {
+            background: var(--light);
+            color: var(--primary);
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .pub-topic:hover {
+            background: var(--secondary);
+            color: white;
+        }
+
+        /* Achievements Section */
+        .achievements {
+            background: var(--gradient-1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .achievements h2 {
+            color: white;
+        }
+
+        .achievements h2:after {
+            background-color: var(--accent);
+        }
+
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .achievement-card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .achievement-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .achievement-card:hover::before {
+            opacity: 1;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .achievement-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+            position: relative;
+        }
+
+        .achievement-icon.trophy {
+            background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+            animation: trophyGlow 2s ease-in-out infinite alternate;
+        }
+
+        .achievement-icon.research {
+            background: linear-gradient(135deg, #00d4aa 0%, #4f6df5 100%);
+            box-shadow: 0 10px 30px rgba(0, 212, 170, 0.3);
+        }
+
+        .achievement-icon.innovation {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            box-shadow: 0 10px 30px rgba(245, 87, 108, 0.3);
+        }
+
+        @keyframes trophyGlow {
+            from {
+                box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+            }
+
+            to {
+                box-shadow: 0 15px 45px rgba(255, 215, 0, 0.5);
+            }
+        }
+
+        .achievement-card h3 {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .achievement-card p {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .achievement-year {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--accent);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 14px;
+        }
+
+        /* Enhanced Project Cards */
+        .project-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .project-card:hover {
+            transform: translateY(-12px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(26, 31, 54, 0.85) 100%);
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 20px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-overlay .btn {
+            background: var(--accent);
+            padding: 8px 20px;
+            font-size: 0.85rem;
+            border-radius: 25px;
+        }
+
+        .project-featured-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: linear-gradient(135deg, #ffd700, #ff8c00);
+            color: #1a1f36;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            z-index: 3;
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+        }
+
+        /* Particle Canvas */
+        #particles-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-subtitle {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .hero-subtitle .dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        /* Section counter badges */
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--light);
+            color: var(--secondary);
+            padding: 6px 16px;
+            border-radius: 25px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+
+            .timeline:before {
+                left: 30px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                left: 0 !important;
+                padding-left: 70px;
+                padding-right: 0;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content:after,
+            .timeline-item:nth-child(even) .timeline-content:after {
+                left: -10px;
+                right: auto;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-dot,
+            .timeline-item:nth-child(even) .timeline-dot {
+                left: 20px;
+                right: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 50px;
+                transition: left 0.3s ease;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                margin: 15px 0;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .hero {
+                padding: 130px 0 60px;
+            }
+
+            .hero-img {
+                width: 150px;
+                height: 150px;
+                font-size: 3rem;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+
+            .charts-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Floating background elements -->
+    <div class="floating-bg" style="top: 10%; left: 5%; width: 80px; height: 80px; animation-delay: 0s;"></div>
+    <div class="floating-bg" style="top: 70%; left: 80%; width: 120px; height: 120px; animation-delay: 5s;"></div>
+    <div class="floating-bg" style="top: 40%; left: 90%; width: 60px; height: 60px; animation-delay: 10s;"></div>
+    <div class="floating-bg" style="top: 80%; left: 10%; width: 100px; height: 100px; animation-delay: 15s;"></div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Dipen<span>dra</span></div>
+                <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- All dynamic sections rendered by JS -->
+    <div id="hero-section"></div>
+    <div id="about-section"></div>
+    <div id="cv-section"></div>
+    <div id="skills-section"></div>
+    <div id="experience-section"></div>
+    <div id="projects-section"></div>
+    <div id="publications-section"></div>
+    <div id="achievements-section"></div>
+    <div id="education-section"></div>
+    <div id="contact-section"></div>
+    <div id="footer-section"></div>
+
+    <!-- Data Source -->
+    <script src="data.js"></script>
+
+    <!-- Rendering Engine -->
+    <script>
+    // ====================================
+    // PORTFOLIO RENDERING ENGINE
+    // Reads PORTFOLIO_DATA from API, falls back to data.js
+    // ====================================
+
+    async function initPortfolio() {
+        let D = PORTFOLIO_DATA;
+        try {
+            const res = await fetch('/api/portfolio');
+            const result = await res.json();
+            if (result.success && result.data) {
+                D = result.data;
+                console.log('✅ Loaded data from MongoDB');
+            }
+        } catch (e) {
+            console.log('⚠️ Using fallback data.js');
+        }
+        renderPortfolio(D);
+    }
+
+    function renderPortfolio(D) {
+
+    // ─── HERO ───
+    document.getElementById('hero-section').innerHTML = `
+        <section id="home" class="hero">
+            <canvas id="particles-canvas"></canvas>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-subtitle">
+                            <span class="dot"></span>
+                            ${D.hero.subtitle}
+                        </div>
+                        <h1><span class="animated-text">${D.hero.name}</span></h1>
+                        <p>${D.hero.tagline}</p>
+                        <p style="font-size:1rem; opacity:0.85;">${D.hero.description}</p>
+                        <div class="hero-buttons" style="margin-top: 25px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+                            ${D.hero.buttons.map(b => `
+                                <a href="${b.href}" class="btn ${b.class || ''}" style="${b.style}">
+                                    <i class="${b.icon}" style="margin-right:8px;"></i>${b.text}
+                                </a>
+                            `).join('')}
+                        </div>
+                    </div>
+                    <div class="hero-img-container">
+                        <img src="${D.hero.image}" alt="${D.hero.name}" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </section>`;
+
+    // ─── ABOUT ───
+    document.getElementById('about-section').innerHTML = `
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text fade-in">
+                        ${D.about.paragraphs.map(p => `<p>${p}</p>`).join('')}
+                    </div>
+                    <div class="about-img fade-in">
+                        <img src="${D.about.image}" alt="About ${D.hero.name}">
+                    </div>
+                </div>
+            </div>
+        </section>`;
+
+    // ─── CV DOWNLOAD ───
+    document.getElementById('cv-section').innerHTML = `
+        <section id="cv-download" class="cv-download">
+            <div class="container">
+                <h2>Download My CV</h2>
+                <div class="cv-download-content fade-in">
+                    <h3>Get my complete resume with detailed experience and qualifications</h3>
+                    <p>Click the button below to download my CV in PDF format</p>
+                    <a href="CV.pdf" class="btn download-cv" download>
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <p style="margin-top: 20px; font-size: 0.9rem; color: var(--text-light);">
+                        If the download doesn't start automatically, <a href="CV.pdf" download style="color: var(--secondary);">click here</a>
+                    </p>
+                </div>
+            </div>
+        </section>`;
+
+    // ─── SKILLS ───
+    document.getElementById('skills-section').innerHTML = `
+        <div class="skills-intro fade-in">
+            ${D.skillsIntro.map(p => `<p>${p}</p>`).join('')}
+        </div>
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-container">
+                    ${D.skills.map(cat => `
+                        <div class="skill-category fade-in">
+                            <h3><i class="${cat.icon}"></i> ${cat.title}</h3>
+                            ${cat.items.map(s => `
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <span>${s.name}</span>
+                                        <span>${s.level}%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" data-level="${s.level}"></div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `).join('')}
+                </div>
+
+                <!-- Teaching Statistics -->
+                <div class="teaching-stats fade-in">
+                    <h2 style="margin-bottom: 30px;">Teaching Impact</h2>
+                    <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">
+                        Over the years, I've had the privilege of teaching thousands of students, helping them excel in Mathematics and Physics.
+                        My teaching methodology focuses on conceptual understanding and practical application, resulting in significant improvements in student performance.
+                    </p>
+                    <div class="stats-container">
+                        ${D.teachingStats.map(s => `
+                            <div class="stat-item">
+                                <div class="stat-icon"><i class="${s.icon}"></i></div>
+                                <div class="stat-number" data-target="${s.target}">0</div>
+                                <div class="stat-label">${s.label}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+
+                    <div class="charts-container">
+                        <div class="chart fade-in">
+                            <h3 class="chart-title">Student Performance Improvement</h3>
+                            <div class="chart-bar">
+                                <div class="chart-fill" data-width="85" style="background: linear-gradient(90deg, var(--secondary), var(--accent));">
+                                    <span class="chart-label">Mathematics</span>
+                                </div>
+                                <span class="chart-value">85%</span>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="chart-fill" data-width="80" style="background: linear-gradient(90deg, var(--secondary), #9b59b6);">
+                                    <span class="chart-label">Physics</span>
+                                </div>
+                                <span class="chart-value">80%</span>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="chart-fill" data-width="90" style="background: linear-gradient(90deg, var(--secondary), #e74c3c);">
+                                    <span class="chart-label">Problem Solving</span>
+                                </div>
+                                <span class="chart-value">90%</span>
+                            </div>
+                        </div>
+                        <div class="chart fade-in">
+                            <h3 class="chart-title">Student Growth Over Time</h3>
+                            <div class="growth-chart">
+                                <div class="growth-line" data-height="85">
+                                    <div class="growth-marker"></div>
+                                    <div class="growth-number">2500+ Students</div>
+                                </div>
+                                <div class="growth-label">Teaching Journey (2019-Present)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>`;
+
+    // ─── EXPERIENCE ───
+    document.getElementById('experience-section').innerHTML = `
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2>My Experience</h2>
+                <div class="timeline">
+                    ${D.experience.map(exp => `
+                        <div class="timeline-item fade-in">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">${exp.date}</div>
+                                <h3>${exp.icon ? `<i class="${exp.icon}" style="color: ${exp.iconColor}; margin-right: 8px;"></i>` : ''}${exp.title}</h3>
+                                <p>${exp.description}</p>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        </section>`;
+
+    // ─── PROJECTS ───
+    document.getElementById('projects-section').innerHTML = `
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    ${D.projects.map(p => `
+                        <div class="project-card fade-in">
+                            <div class="project-img" style="background: ${p.gradient}; position: relative;">
+                                <i class="${p.icon}"></i>
+                                ${p.featured ? `<span class="project-featured-badge"><i class="${p.badgeIcon}" style="margin-right:4px;"></i> ${p.badgeText}</span>` : ''}
+                                ${p.link ? `<div class="project-overlay"><a href="${p.link}" class="btn" target="_blank">Live Demo <i class="fas fa-external-link-alt" style="margin-left:6px;"></i></a></div>` : ''}
+                            </div>
+                            <div class="project-info">
+                                <h3>${p.title}</h3>
+                                <p>${p.description}</p>
+                                <div class="project-tags">
+                                    ${p.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}
+                                </div>
+                                ${p.link ? `<a href="${p.link}" class="btn" style="margin-top: 15px; padding: 8px 15px;" target="_blank"><i class="fas fa-eye" style="margin-right:6px;"></i>View Project</a>` : ''}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        </section>`;
+
+    // ─── PUBLICATIONS ───
+    document.getElementById('publications-section').innerHTML = `
+        <section id="publications" class="publications">
+            <div class="container">
+                <div style="text-align: center;">
+                    <span class="section-badge"><i class="fas fa-scroll"></i> Research</span>
+                </div>
+                <h2>Publications</h2>
+                ${D.publications.map(pub => `
+                    <div class="publication-card fade-in" style="max-width: 900px; margin: 0 auto; margin-bottom: 30px;">
+                        <span class="pub-badge"><i class="fas fa-check-circle"></i> ${pub.badge}</span>
+                        <div class="pub-title">${pub.title}</div>
+                        <div class="pub-journal"><i class="fas fa-book-open"></i> ${pub.journal}</div>
+                        <p class="pub-description">${pub.description}</p>
+                        <div class="pub-topics">
+                            ${pub.topics.map(t => `<span class="pub-topic">${t}</span>`).join('')}
+                        </div>
+                        ${pub.link ? `<a href="${pub.link}" class="btn" style="padding: 10px 24px; border-radius: 25px;" target="_blank"><i class="fas fa-external-link-alt" style="margin-right: 8px;"></i>${pub.linkText}</a>` : ''}
+                    </div>
+                `).join('')}
+            </div>
+        </section>`;
+
+    // ─── ACHIEVEMENTS ───
+    document.getElementById('achievements-section').innerHTML = `
+        <section id="achievements" class="achievements">
+            <div class="container">
+                <div style="text-align: center;">
+                    <span class="section-badge" style="background: rgba(255,255,255,0.1); color: var(--accent);"><i class="fas fa-medal"></i> Recognition</span>
+                </div>
+                <h2>Achievements</h2>
+                <div class="achievements-grid">
+                    ${D.achievements.map(a => `
+                        <div class="achievement-card fade-in">
+                            <div class="achievement-icon ${a.iconType}">
+                                <i class="${a.iconClass}"></i>
+                            </div>
+                            <h3>${a.title}</h3>
+                            <p>${a.description}</p>
+                            <span class="achievement-year">${a.year}</span>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        </section>`;
+
+    // ─── EDUCATION ───
+    document.getElementById('education-section').innerHTML = `
+        <section id="education" class="education">
+            <div class="container">
+                <h2>Education</h2>
+                <div class="education-content fade-in">
+                    ${D.education.map(edu => `
+                        <div class="education-item">
+                            <div class="education-meta">
+                                <h3>${edu.degree}</h3>
+                                <span>${edu.period}</span>
+                            </div>
+                            <p>${edu.institution}</p>
+                            <p>${edu.description}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        </section>`;
+
+    // ─── CONTACT ───
+    document.getElementById('contact-section').innerHTML = `
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item fade-in">
+                            <i class="fas fa-envelope"></i>
+                            <div><h3>Email</h3><p>${D.contact.email}</p></div>
+                        </div>
+                        <div class="contact-item fade-in">
+                            <i class="fas fa-phone"></i>
+                            <div><h3>Phone</h3><p>${D.contact.phone}</p></div>
+                        </div>
+                        <div class="contact-item fade-in">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div><h3>Location</h3><p>${D.contact.location}</p></div>
+                        </div>
+                        <div class="contact-item fade-in">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h3>Website & Social</h3>
+                                <div class="social-links" style="margin-top: 10px;">
+                                    ${D.contact.socialLinks.map(l => `<a href="${l.href}" title="${l.title}"><i class="${l.icon}"></i></a>`).join('')}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form fade-in">
+                        <form id="contactForm">
+                            <div class="form-group"><label for="name">Name</label><input type="text" id="name" class="form-control" required></div>
+                            <div class="form-group"><label for="email">Email</label><input type="email" id="email" class="form-control" required></div>
+                            <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" class="form-control" required></div>
+                            <div class="form-group"><label for="message">Message</label><textarea id="message" class="form-control" required></textarea></div>
+                            <button type="submit" class="btn">Send Message via WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>`;
+
+    // ─── FOOTER ───
+    document.getElementById('footer-section').innerHTML = `
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="logo">Dipendra<span>Thakur</span></div>
+                    <div class="social-links">
+                        ${D.footer.socialLinks.map(l => `<a href="${l.href}" title="${l.title}"><i class="${l.icon}"></i></a>`).join('')}
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; ${D.footer.copyright}</p>
+                </div>
+            </div>
+        </footer>`;
+
+    // ====================================
+    // INTERACTIONS & ANIMATIONS (unchanged)
+    // ====================================
+
+    // Mobile Menu Toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+        document.querySelector('.nav-links').classList.toggle('active');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.remove('active');
+        });
+    });
+
+    // Scroll animations
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const fadeInObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                if (entry.target.classList.contains('skill-category')) {
+                    entry.target.querySelectorAll('.skill-level').forEach(bar => {
+                        setTimeout(() => { bar.style.width = bar.getAttribute('data-level') + '%'; }, 200);
+                    });
+                }
+                if (entry.target.classList.contains('teaching-stats')) {
+                    animateStatistics();
+                    animateCharts();
+                }
+            }
+        });
+    }, { threshold: 0.1 });
+    fadeElements.forEach(el => fadeInObserver.observe(el));
+
+    // Animate Statistics Numbers
+    function animateStatistics() {
+        document.querySelectorAll('.stat-number').forEach(stat => {
+            const target = parseInt(stat.getAttribute('data-target'));
+            const step = target / (2000 / 16);
+            let current = 0;
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) { current = target; clearInterval(timer); }
+                stat.textContent = Math.floor(current);
+            }, 16);
+        });
+    }
+
+    // Animate Charts
+    function animateCharts() {
+        document.querySelectorAll('.chart-fill').forEach(fill => {
+            setTimeout(() => { fill.style.width = fill.getAttribute('data-width') + '%'; }, 500);
+        });
+        const growthLine = document.querySelector('.growth-line');
+        if (growthLine) setTimeout(() => { growthLine.style.height = growthLine.getAttribute('data-height') + '%'; }, 500);
+    }
+
+    // WhatsApp Form
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        const msg = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+        window.open(`https://wa.me/${D.contact.whatsapp}?text=${msg}`, '_blank');
+        this.reset();
+    });
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const id = this.getAttribute('href');
+            if (id === '#') return;
+            const el = document.querySelector(id);
+            if (el) window.scrollTo({ top: el.offsetTop - 70, behavior: 'smooth' });
+        });
+    });
+
+    // Text fade-in on scroll
+    const textElements = document.querySelectorAll('h1, h2, h3, p');
+    const textObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animation = 'fadeIn 1s ease forwards';
+                entry.target.style.opacity = '1';
+            }
+        });
+    }, { threshold: 0.2 });
+    textElements.forEach(el => { el.style.opacity = '0'; textObserver.observe(el); });
+
+    // Particle Animation
+    (function () {
+        const canvas = document.getElementById('particles-canvas');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        const count = 60;
+
+        function resize() {
+            const hero = canvas.parentElement;
+            canvas.width = hero.offsetWidth;
+            canvas.height = hero.offsetHeight;
+        }
+        resize();
+        window.addEventListener('resize', resize);
+
+        class P {
+            constructor() { this.reset(); }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.6;
+                this.vy = (Math.random() - 0.5) * 0.6;
+                this.r = Math.random() * 2 + 1;
+                this.o = Math.random() * 0.5 + 0.2;
+            }
+            update() {
+                this.x += this.vx; this.y += this.vy;
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(255,255,255,${this.o})`;
+                ctx.fill();
+            }
+        }
+        for (let i = 0; i < count; i++) particles.push(new P());
+
+        function loop() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const d = Math.sqrt(dx * dx + dy * dy);
+                    if (d < 120) {
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.strokeStyle = `rgba(255,255,255,${0.1 * (1 - d / 120)})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                }
+            }
+            requestAnimationFrame(loop);
+        }
+        loop();
+    })();
+    } // End of renderPortfolio
+
+    // Initialize the portfolio
+    initPortfolio();
+    </script>
+</body>
+
+</html>
+    <div class="floating-bg" style="top: 70%; left: 80%; width: 120px; height: 120px; animation-delay: 5s;"></div>
+    <div class="floating-bg" style="top: 40%; left: 90%; width: 60px; height: 60px; animation-delay: 10s;"></div>
+    <div class="floating-bg" style="top: 80%; left: 10%; width: 100px; height: 100px; animation-delay: 15s;"></div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Dipen<span>dra</span></div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-subtitle">
+                        <span class="dot"></span>
+                        Published Researcher · Geomatics Innovator
+                    </div>
+                    <h1><span class="animated-text">Dipendra Thakur</span></h1>
+                    <p>Geomatics Engineer · Researcher · Educator</p>
+                    <p style="font-size:1rem; opacity:0.85;">Bridging geospatial science with modern technology — GPS
+                        crustal deformation analysis, spatial data visualization, and innovative digital solutions.</p>
+                    <div class="hero-buttons"
+                        style="margin-top: 25px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+                        <a href="#projects" class="btn"><i class="fas fa-rocket" style="margin-right:8px;"></i>View
+                            Projects</a>
+                        <a href="#publications" class="btn" style="background: transparent; border: 2px solid white;"><i
+                                class="fas fa-newspaper" style="margin-right:8px;"></i>Publications</a>
+                        <a href="#cv-download" class="btn download-cv"><i class="fas fa-download"
+                                style="margin-right:8px;"></i>Download CV</a>
+                    </div>
+                </div>
+                <div class="hero-img-container">
+                    <img src="image.jpg" alt="Dipendra Thakur" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>I am Dipendra, a passionate Geomatics Engineer with a strong foundation in spatial data analysis,
+                        mapping, and digital surveying. My academic journey has shaped my skills in ArcGIS, QGIS, Pix4D,
+                        and various photogrammetry and database management tools.</p>
+                    <p>I have worked on several geospatial projects, including the Digitization Project at NAXA, where I
+                        contributed to building and updating geodatabases, digitizing buildings, and managing spatial
+                        datasets. I have also gained practical experience through internships in drone ecosystem
+                        research, geo-database management, and multihazard risk assessment.</p>
+                    <p>Alongside my technical background, I am also a teacher, guiding students in Mathematics and
+                        Physics. Teaching allows me to connect with learners, simplify complex concepts, and share my
+                        love for discovery and problem-solving.</p>
+                    <p>I believe that every map tells a story and every dataset holds potential for change. My goal is
+                        to combine my analytical skills and creative approach to contribute meaningfully to the field of
+                        geomatics and spatial innovation.</p>
+                </div>
+                <div class="about-img fade-in">
+                    <img src="11.jpg" alt="About Dipendra Thakur">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Download Section -->
+    <section id="cv-download" class="cv-download">
+        <div class="container">
+            <h2>Download My CV</h2>
+            <div class="cv-download-content fade-in">
+                <h3>Get my complete resume with detailed experience and qualifications</h3>
+                <p>Click the button below to download my CV in PDF format</p>
+                <a href="CV.pdf" class="btn download-cv" download>
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+                <p style="margin-top: 20px; font-size: 0.9rem; color: var(--text-light);">
+                    If the download doesn't start automatically, <a href="CV.pdf" download
+                        style="color: var(--secondary);">click here</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <div class="skills-intro fade-in">
+        <p>I have developed a broad range of technical and creative skills through my studies in Geomatics Engineering
+            and my hands on experience in mapping, data management, and education. My technical expertise covers GIS,
+            remote sensing, photogrammetry, and spatial data visualization, allowing me to manage each stage of the
+            geospatial workflow with precision and efficiency.</p>
+        <p>I am skilled in using ArcGIS, QGIS, and Pix4D, with experience in digitization, spatial analysis, contour
+            creation, and drone data processing. I also possess strong abilities in cartographic design, data quality
+            assurance, and geodatabase management, ensuring accuracy and clarity in all project outcomes.</p>
+        <p>In addition to my technical background, I have developed creative skills in video editing and digital
+            presentation. I apply these abilities to both professional and educational work, producing engaging visual
+            materials that make complex spatial and scientific concepts easier to understand.</p>
+        <p>My experience as a teacher of Mathematics and Physics has strengthened my communication, analytical, and
+            problem-solving skills. I value teamwork, adaptability, and continuous learning, and I strive to use every
+            skill technical or creative to contribute meaningfully to the fields of geomatics and education.</p>
+    </div>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-map"></i> GIS & Remote Sensing</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>ArcGIS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>QGIS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Pix4D</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Photogrammetry</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-database"></i> Data Management</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Digitization</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Geo-Database Management</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Drone Data Processing</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-chalkboard-teacher"></i> Teaching</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Mathematics</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Physics</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Educational Content Creation</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEW: Teaching Statistics Section -->
+            <div class="teaching-stats fade-in">
+                <h2 style="margin-bottom: 30px;">Teaching Impact</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">
+                    Over the years, I've had the privilege of teaching thousands of students, helping them excel in
+                    Mathematics and Physics.
+                    My teaching methodology focuses on conceptual understanding and practical application, resulting in
+                    significant improvements in student performance.
+                </p>
+
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="stat-number" data-target="2500">0</div>
+                        <div class="stat-label">Students Taught</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-chalkboard"></i>
+                        </div>
+                        <div class="stat-number" data-target="5000">0</div>
+                        <div class="stat-label">Teaching Hours</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="stat-number" data-target="95">0</div>
+                        <div class="stat-label">Success Rate (%)</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="stat-number" data-target="120">0</div>
+                        <div class="stat-label">Topics Covered</div>
+                    </div>
+                </div>
+
+                <!-- NEW: Animated Charts -->
+                <div class="charts-container">
+                    <div class="chart fade-in">
+                        <h3 class="chart-title">Student Performance Improvement</h3>
+                        <div class="chart-bar">
+                            <div class="chart-fill" data-width="85"
+                                style="background: linear-gradient(90deg, var(--secondary), var(--accent));">
+                                <span class="chart-label">Mathematics</span>
+                            </div>
+                            <span class="chart-value">85%</span>
+                        </div>
+
+                        <div class="chart-bar">
+                            <div class="chart-fill" data-width="80"
+                                style="background: linear-gradient(90deg, var(--secondary), #9b59b6);">
+                                <span class="chart-label">Physics</span>
+                            </div>
+                            <span class="chart-value">80%</span>
+                        </div>
+
+                        <div class="chart-bar">
+                            <div class="chart-fill" data-width="90"
+                                style="background: linear-gradient(90deg, var(--secondary), #e74c3c);">
+                                <span class="chart-label">Problem Solving</span>
+                            </div>
+                            <span class="chart-value">90%</span>
+                        </div>
+                    </div>
+
+                    <div class="chart fade-in">
+                        <h3 class="chart-title">Student Growth Over Time</h3>
+                        <div class="growth-chart">
+                            <div class="growth-line" data-height="85">
+                                <div class="growth-marker"></div>
+                                <div class="growth-number">2500+ Students</div>
+                            </div>
+                            <div class="growth-label">Teaching Journey (2019-Present)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>My Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025</div>
+                        <h3><i class="fas fa-newspaper"
+                                style="color: var(--secondary); margin-right: 8px;"></i>Published Research Article</h3>
+                        <p>Authored a research article published in <strong>Geomatics World Magazine</strong> on
+                            GPS-based crustal deformation analysis and Himalayan geodynamics. The publication reflects
+                            deep analytical capability, research-oriented thinking, and the ability to bridge
+                            theoretical geomatics concepts with real-world geospatial applications.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025</div>
+                        <h3><i class="fas fa-trophy" style="color: #ffd700; margin-right: 8px;"></i>HackFast — First
+                            Prize Winner</h3>
+                        <p>Achieved <strong>First Prize Winner</strong> position at HackFast by presenting DisasterReady
+                            — a Live Emergency Evacuation System with real-time disaster response, shelter management,
+                            and evacuation route planning. Demonstrated innovation, teamwork, technical leadership, and
+                            the ability to transform ideas into impactful solutions.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Present</div>
+                        <h3><i class="fas fa-satellite" style="color: var(--accent); margin-right: 8px;"></i>Nepal GPS
+                            Crustal Deformation Analysis</h3>
+                        <p>Developed a comprehensive interactive web-based geospatial analysis system for studying
+                            tectonic plate collision and ground movement in the Nepal Himalaya using GPS and geodetic
+                            survey data. Features include velocity mapping, strain rate calculation, earthquake hazard
+                            visualization, and time series analysis using real data from Nevada Geodetic Laboratory and
+                            UNAVCO.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Present</div>
+                        <h3>Digitization Project</h3>
+                        <p>Worked on the Digitization Project at NAXA, contributing to building and updating
+                            geodatabases, digitizing buildings, and managing spatial datasets.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <h3>Drone Ecosystem Research</h3>
+                        <p>Conducted research using drone technology for ecosystem analysis and environmental
+                            monitoring.</p>
+                        <!-- NEW: Visual Symbol for Drone Ecosystem Research -->
+                        <div class="project-symbol drone-symbol">
+                            <i class="fas fa-drone"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2022</div>
+                        <h3>Geo Database Management</h3>
+                        <p>Managed geospatial databases, ensuring data integrity and accessibility for various projects.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2021</div>
+                        <h3>Municipal Geodatabase Development Project</h3>
+                        <p>Participated in projects assessing Municipal Geodatabase Development Project.</p>
+                        <!-- NEW: Visual Symbol for Municipal Geodatabase Development Project -->
+                        <div class="project-symbol municipal-symbol">
+                            <i class="fas fa-city"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019 - Present</div>
+                        <h3>Mathematics & Physics Tutor</h3>
+                        <p>Teaching Mathematics and Physics to students up to grade 12, helping them understand complex
+                            concepts and improve their problem-solving skills.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <!-- FEATURED: Nepal GPS Crustal Deformation -->
+                <div class="project-card fade-in">
+                    <div class="project-img"
+                        style="background: linear-gradient(135deg, #1a1f36, #2d3a8c, #4f6df5); position: relative;">
+                        <i class="fas fa-satellite"></i>
+                        <span class="project-featured-badge"><i class="fas fa-star" style="margin-right:4px;"></i>
+                            Featured</span>
+                        <div class="project-overlay">
+                            <a href="https://dipendrathak.github.io/Nepal-GPS-Crustal-Deformation/" class="btn"
+                                target="_blank">Live Demo <i class="fas fa-external-link-alt"
+                                    style="margin-left:6px;"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Nepal GPS Crustal Deformation Analysis</h3>
+                        <p>Interactive web-based analysis system for studying tectonic plate collision and ground
+                            movement in Nepal Himalaya using real GPS data from Nevada Geodetic Laboratory & UNAVCO.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">GPS Analysis</span>
+                            <span class="project-tag">Leaflet.js</span>
+                            <span class="project-tag">Chart.js</span>
+                            <span class="project-tag">Geodesy</span>
+                            <span class="project-tag">Tectonics</span>
+                        </div>
+                        <a href="https://dipendrathak.github.io/Nepal-GPS-Crustal-Deformation/" class="btn"
+                            style="margin-top: 15px; padding: 8px 15px;" target="_blank"><i class="fas fa-eye"
+                                style="margin-right:6px;"></i>View Project</a>
+                    </div>
+                </div>
+
+                <!-- FEATURED: DisasterReady — HackFast Winner -->
+                <div class="project-card fade-in">
+                    <div class="project-img"
+                        style="background: linear-gradient(135deg, #ff6b35, #f7931e, #ffd700); position: relative;">
+                        <i class="fas fa-shield-alt"></i>
+                        <span class="project-featured-badge"><i class="fas fa-trophy" style="margin-right:4px;"></i> 1st
+                            Prize</span>
+                        <div class="project-overlay">
+                            <a href="https://dipendrathak.github.io/Hackfast-project-idea/" class="btn"
+                                target="_blank">Live Demo <i class="fas fa-external-link-alt"
+                                    style="margin-left:6px;"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DisasterReady — HackFast Winner</h3>
+                        <p>Live Emergency Evacuation System with real-time disaster response, shelter management,
+                            evacuation route planning, and resource tracking. First Prize at HackFast hackathon.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Emergency System</span>
+                            <span class="project-tag">Real-time Maps</span>
+                            <span class="project-tag">Hackathon</span>
+                            <span class="project-tag">GIS</span>
+                        </div>
+                        <a href="https://dipendrathak.github.io/Hackfast-project-idea/" class="btn"
+                            style="margin-top: 15px; padding: 8px 15px;" target="_blank"><i class="fas fa-eye"
+                                style="margin-right:6px;"></i>View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Digitization Project</h3>
+                        <p>Building and updating geodatabases, digitizing buildings, and managing spatial datasets for
+                            NAXA.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">ArcGIS</span>
+                            <span class="project-tag">QGIS</span>
+                            <span class="project-tag">Database Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                        <i class="fas fa-drone"></i>
+                        <!-- NEW: Visual Symbol for Drone Ecosystem Research -->
+                        <div class="project-symbol drone-symbol">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Drone Ecosystem Research</h3>
+                        <p>Using drone technology and photogrammetry for environmental monitoring and ecosystem
+                            analysis.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Pix4D</span>
+                            <span class="project-tag">Photogrammetry</span>
+                            <span class="project-tag">Drone Data</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <!-- NEW: Visual Symbol for Municipal Geodatabase Development Project -->
+                        <div class="project-symbol municipal-symbol">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Municipal Geodatabase Development Project</h3>
+                        <p>Assessing multi-hazard risks using geospatial analysis techniques and creating risk maps.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Risk Assessment</span>
+                            <span class="project-tag">Spatial Analysis</span>
+                            <span class="project-tag">GIS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Augmented Reality App</h3>
+                        <p>Final year project developing an augmented reality application for geospatial visualization.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Augmented Reality</span>
+                            <span class="project-tag">Solo Project</span>
+                            <span class="project-tag">Innovation</span>
+                        </div>
+                        <a href="https://dipendrathak.github.io/AR-project/" class="btn"
+                            style="margin-top: 15px; padding: 8px 15px;">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>ArcGIS Project</h3>
+                        <p>A comprehensive GIS project showcasing spatial analysis and mapping capabilities.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">ArcGIS</span>
+                            <span class="project-tag">Spatial Analysis</span>
+                            <span class="project-tag">Web GIS</span>
+                        </div>
+                        <a href="https://dipendrathak.github.io/ArcGisByDIpendra" class="btn"
+                            style="margin-top: 15px; padding: 8px 15px;">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <div style="text-align: center;">
+                <span class="section-badge"><i class="fas fa-scroll"></i> Research</span>
+            </div>
+            <h2>Publications</h2>
+            <div class="publication-card fade-in" style="max-width: 900px; margin: 0 auto;">
+                <span class="pub-badge"><i class="fas fa-check-circle"></i> Published</span>
+                <div class="pub-title">GPS-Based Crustal Deformation Analysis in the Nepal Himalaya: Insights from
+                    Geodetic Monitoring and Tectonic Movement Interpretation</div>
+                <div class="pub-journal">
+                    <i class="fas fa-book-open"></i> Geomatics World Magazine
+                </div>
+                <p class="pub-description">
+                    A comprehensive research article exploring crustal deformation studies using GPS data analysis
+                    across the Nepal Himalayan region. The publication examines India-Eurasia plate convergence rates,
+                    strain accumulation patterns, and seismic hazard implications through geodetic monitoring. The
+                    research bridges theoretical geomatics concepts with real-world geospatial applications,
+                    demonstrating advanced analytical capability in processing continuous GPS station data from Nevada
+                    Geodetic Laboratory and UNAVCO networks.
+                </p>
+                <div class="pub-topics">
+                    <span class="pub-topic">GPS Data Analysis</span>
+                    <span class="pub-topic">Crustal Deformation</span>
+                    <span class="pub-topic">Himalayan Geodynamics</span>
+                    <span class="pub-topic">Geodetic Monitoring</span>
+                    <span class="pub-topic">Tectonic Movements</span>
+                    <span class="pub-topic">Strain Analysis</span>
+                    <span class="pub-topic">Seismic Hazard</span>
+                </div>
+                <a href="https://dipendrathak.github.io/Nepal-GPS-Crustal-Deformation/" class="btn"
+                    style="padding: 10px 24px; border-radius: 25px;" target="_blank">
+                    <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i>View Interactive Research
+                    Dashboard
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div style="text-align: center;">
+                <span class="section-badge" style="background: rgba(255,255,255,0.1); color: var(--accent);"><i
+                        class="fas fa-medal"></i> Recognition</span>
+            </div>
+            <h2>Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card fade-in">
+                    <div class="achievement-icon trophy">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>HackFast — First Prize Winner</h3>
+                    <p>Secured the First Prize at HackFast hackathon by presenting DisasterReady — an innovative Live
+                        Emergency Evacuation System. Demonstrated strong problem-solving, creative thinking, technical
+                        leadership, and the ability to transform visionary ideas into impactful digital solutions.</p>
+                    <span class="achievement-year">2025</span>
+                </div>
+                <div class="achievement-card fade-in">
+                    <div class="achievement-icon research">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Published Research Author</h3>
+                    <p>Authored and published a research article in Geomatics World Magazine on GPS-based crustal
+                        deformation analysis and Himalayan geodynamics — bridging academic research with practical
+                        geospatial technology and scientific communication.</p>
+                    <span class="achievement-year">2025</span>
+                </div>
+                <div class="achievement-card fade-in">
+                    <div class="achievement-icon innovation">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Geospatial Innovation Leader</h3>
+                    <p>Developed comprehensive interactive web-based geospatial portfolio projects combining GPS
+                        analysis, spatial data visualization, earthquake hazard mapping, and scientific communication
+                        through modern web technologies.</p>
+                    <span class="achievement-year">2024 - Present</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-content fade-in">
+                <div class="education-item">
+                    <div class="education-meta">
+                        <h3>Bachelor's in Geomatics Engineering</h3>
+                        <span>2022 - Present</span>
+                    </div>
+                    <p>IOE Paschimanchal Campus, Pokhara</p>
+                    <p>Currently pursuing a Bachelor's degree in Geomatics Engineering with a focus on spatial data
+                        analysis, mapping, and surveying technologies.</p>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-meta">
+                        <h3>High School Degree</h3>
+                        <span>Completed</span>
+                    </div>
+                    <p>Mithila Institute of Technology (MIT) Janakpur</p>
+                    <p>Completed higher secondary education with a focus on Science, Mathematics, and Physics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item fade-in">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>thakurnikee47@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item fade-in">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>9824177549</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item fade-in">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Bathanaha/ Manara, Shiswa municipality - 09, Mahottari</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item fade-in">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h3>Website & Social</h3>
+                            <div class="social-links" style="margin-top: 10px;">
+                                <a href="https://www.facebook.com/" title="Facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="https://youtube.com/%40DipendarThakur-iu7np" title="YouTube"><i
+                                        class="fab fa-youtube"></i></a>
+                                <a href="https://dipendrathak.github.io/ArcGisByDIpendra" title="ArcGIS Project"><i
+                                        class="fas fa-map"></i></a>
+                                <a href="https://dipendrathak.github.io/Agumented-Reality-App" title="AR Project"><i
+                                        class="fas fa-vr-cardboard"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Send Message via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Dipendra<span>Thakur</span></div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://youtube.com/%40DipendarThakur-iu7np" title="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://github.com/dipendrathak" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://dipendrathak.github.io/Nepal-GPS-Crustal-Deformation/" title="GPS Research"><i
+                            class="fas fa-satellite"></i></a>
+                    <a href="https://dipendrathak.github.io/ArcGisByDIpendra" title="ArcGIS Project"><i
+                            class="fas fa-map"></i></a>
+                    <a href="https://dipendrathak.github.io/Agumented-Reality-App" title="AR Project"><i
+                            class="fas fa-vr-cardboard"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Dipendra Thakur. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+
+        // Scroll animations
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const fadeInObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+
+                    // Animate skill bars
+                    if (entry.target.classList.contains('skill-category')) {
+                        const skillBars = entry.target.querySelectorAll('.skill-level');
+                        skillBars.forEach(bar => {
+                            const level = bar.getAttribute('data-level');
+                            setTimeout(() => {
+                                bar.style.width = level + '%';
+                            }, 200);
+                        });
+                    }
+
+                    // NEW: Animate teaching statistics
+                    if (entry.target.classList.contains('teaching-stats')) {
+                        animateStatistics();
+                        animateCharts();
+                    }
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeElements.forEach(element => {
+            fadeInObserver.observe(element);
+        });
+
+        // NEW: Animate Statistics Numbers
+        function animateStatistics() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+
+            statNumbers.forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-target'));
+                const duration = 2000; // 2 seconds
+                const step = target / (duration / 16); // 60fps
+                let current = 0;
+
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    stat.textContent = Math.floor(current);
+                }, 16);
+            });
+        }
+
+        // NEW: Animate Charts
+        function animateCharts() {
+            // Animate chart bars
+            const chartFills = document.querySelectorAll('.chart-fill');
+            chartFills.forEach(fill => {
+                const width = fill.getAttribute('data-width');
+                setTimeout(() => {
+                    fill.style.width = width + '%';
+                }, 500);
+            });
+
+            // Animate growth chart
+            const growthLine = document.querySelector('.growth-line');
+            const height = growthLine.getAttribute('data-height');
+            setTimeout(() => {
+                growthLine.style.height = height + '%';
+            }, 500);
+        }
+
+        // Form submission to WhatsApp
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Format the message for WhatsApp
+            const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+
+            // Create WhatsApp URL
+            const whatsappURL = `https://wa.me/9779824177549?text=${whatsappMessage}`;
+
+            // Open WhatsApp
+            window.open(whatsappURL, '_blank');
+
+            // Reset form
+            this.reset();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add animation to text elements on scroll
+        const textElements = document.querySelectorAll('h1, h2, h3, p');
+
+        const textObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = `fadeIn 1s ease forwards`;
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, { threshold: 0.2 });
+
+        textElements.forEach(element => {
+            element.style.opacity = '0';
+            textObserver.observe(element);
+        });
+
+        // Particle Animation for Hero Section
+        (function () {
+            const canvas = document.getElementById('particles-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+            const particleCount = 60;
+
+            function resizeCanvas() {
+                const hero = canvas.parentElement;
+                canvas.width = hero.offsetWidth;
+                canvas.height = hero.offsetHeight;
+            }
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+
+            class Particle {
+                constructor() {
+                    this.reset();
+                }
+                reset() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.vx = (Math.random() - 0.5) * 0.6;
+                    this.vy = (Math.random() - 0.5) * 0.6;
+                    this.radius = Math.random() * 2 + 1;
+                    this.opacity = Math.random() * 0.5 + 0.2;
+                }
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                    if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+                }
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
+                    ctx.fill();
+                }
+            }
+
+            for (let i = 0; i < particleCount; i++) {
+                particles.push(new Particle());
+            }
+
+            function drawConnections() {
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        if (dist < 120) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = `rgba(255, 255, 255, ${0.1 * (1 - dist / 120)})`;
+                            ctx.lineWidth = 0.5;
+                            ctx.stroke();
+                        }
+                    }
+                }
+            }
+
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                particles.forEach(p => { p.update(); p.draw(); });
+                drawConnections();
+                requestAnimationFrame(animate);
+            }
+            animate();
+        })();
+    </script>
+</body>
+
+</html>
